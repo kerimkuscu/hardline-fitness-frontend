@@ -7,6 +7,8 @@ module.exports = {
     register: 'Register',
     login: 'Login',
     logout: 'Logout',
+    entry_successful: 'Entry successful',
+    entry_failed: 'Entry failed',
 
     navbar: {
         take_coaching: 'TAKE COACHİNG',

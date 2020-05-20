@@ -7,6 +7,8 @@ module.exports = {
     register: 'Kayıt Ol',
     login: 'Giriş Yap',
     logout: 'Çıkış Yap',
+    entry_successful: 'Giriş başarılı',
+    entry_failed: 'Giriş başarısız',
 
     navbar: {
         take_coaching: 'KOÇLUK AL',
