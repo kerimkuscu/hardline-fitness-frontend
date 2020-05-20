@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
 import toastr from 'toastr';
+import _ from 'lodash';
+import axios from 'axios';
+import $ from 'jquery';
 
 Vue.config.productionTip = false
 
@@ -35,6 +38,16 @@ import router from './components/router';
 // toastr
 window.toastr = toastr;
 
+// jQuery
+window.$ = window.jQuery = $;
+
+//lodash
+window._ = _;
+
+//axios
+window.axios = axios;
+window.eventHub = new Vue();
+
 toastr.options = {
   'closeButton': true,
   'debug': false,
@@ -52,7 +65,7 @@ toastr.options = {
   'hideMethod': 'fadeOut'
 };
 
-
+// eslint-disable-next-line vue/require-name-property
 new Vue({
   render: h => h(App),
   i18n,
