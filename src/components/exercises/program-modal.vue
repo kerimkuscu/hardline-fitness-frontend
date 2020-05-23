@@ -63,7 +63,6 @@
 
 <script>
     import Form from 'form-backend-validation';
-    import $ from 'jquery';
 
     export default {
         name: 'ProgramModal',
