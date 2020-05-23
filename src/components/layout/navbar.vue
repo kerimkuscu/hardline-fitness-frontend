@@ -15,35 +15,13 @@
 
     <div id="navbarSupportedContent" class="collapse navbar-collapse">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#"><i class="fas fa-star" /> {{ $t('navbar.take_coaching') }}</a>
-        </li>
 
-        <li class="nav-item dropdown">
-          <a
-            id="target"
-            class="nav-link dropdown-toggle"
-            href="#"
-            role="button"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            {{ $t('navbar.target') }}
-          </a>
-          <div class="dropdown-menu" aria-labelledby="target">
-            <a class="dropdown-item" href="#">{{ $t('navbar.target_menu.body_building') }}</a>
-            <a class="dropdown-item" href="#">{{ $t('navbar.target_menu.burning_oil') }}</a>
-            <a class="dropdown-item" href="#">{{ $t('navbar.target_menu.strengthened') }}</a>
-          </div>
+        <li class="nav-item">
+          <a class="nav-link" href="/exercises">{{ $t('navbar.exercises') }}</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#">{{ $t('navbar.exercises') }}</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">{{ $t('navbar.supplements') }}</a>
+          <a class="nav-link" href="https://www.supplementler.com/">{{ $t('navbar.supplements') }}</a>
         </li>
 
         <li class="nav-item dropdown">
@@ -56,12 +34,13 @@
             aria-haspopup="true"
             aria-expanded="false"
           >
-            {{ $t('navbar.others') }}
+            {{ $t('navbar.calculators') }}
           </a>
           <div class="dropdown-menu" aria-labelledby="others">
-            <a class="dropdown-item" href="#">{{ $t('navbar.target_menu.body_building') }}</a>
-            <a class="dropdown-item" href="#">{{ $t('navbar.target_menu.burning_oil') }}</a>
-            <a class="dropdown-item" href="#">{{ $t('navbar.target_menu.strengthened') }}</a>
+            <a class="dropdown-item" href="https://www.agirsaglam.com/ideal-kilo/">{{ $t('navbar.calculators_menu.ideal_weight_calculation') }}</a>
+            <a class="dropdown-item" href="https://www.agirsaglam.com/vucut-yag-orani-hesaplama/">{{ $t('navbar.calculators_menu.body_fat_ratio') }}</a>
+            <a class="dropdown-item" href="https://www.agirsaglam.com/gunluk-kalori-ihtiyaci-hesaplama/">{{ $t('navbar.calculators_menu.daily_calorie_needs') }}</a>
+            <a class="dropdown-item" href="https://www.agirsaglam.com/vucut-kitle-indeksi-bmi/">{{ $t('navbar.calculators_menu.body_mass_index') }}</a>
           </div>
         </li>
       </ul>
