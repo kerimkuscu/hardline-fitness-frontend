@@ -9,21 +9,18 @@ module.exports = {
     logout: 'Çıkış Yap',
     entry_successful: 'Giriş başarılı',
     entry_failed: 'Giriş başarısız',
+    close: 'Kapat',
+    save: 'Kaydet',
 
     navbar: {
-        take_coaching: 'KOÇLUK AL',
-        target: 'HEDEFİN NE?',
-        target_menu: {
-            body_building: 'VÜCUT GELİŞTİRME',
-            burning_oil: 'YAĞ YAKMA',
-            strengthened: 'GÜÇLEN'
-        },
         exercises: 'EGZERSİZLER',
         supplements: 'SUPPLEMENTLER',
-        others: 'DİĞER',
-        others_menu: {
-            calculator: 'HESAPLAYICILAR',
-            quizzes: 'KISA SINAV'
+        calculators: 'HESAPLAYICILAR',
+        calculators_menu: {
+            ideal_weight_calculation: 'İDEAL KİLO HESAPLAMA',
+            body_fat_ratio: 'VÜCUT YAĞ ORANI',
+            daily_calorie_needs: 'GÜNLÜK KALORİ İHTİYACI',
+            body_mass_index: 'VÜCUT KİTLE İNDEKSİ'
         }
     },
 
@@ -51,5 +48,15 @@ module.exports = {
         body_fat_ratio: 'Vücut Yağ Oranı',
         daily_calorie_needs: 'Günlük Kalori İhtiyacı',
         body_mass_index: 'Vücut Kitle İndeksi'
+    },
+
+    exercises: {
+        title: 'EGZERSİZLER',
+        add: 'EGZERSİZ EKLE',
+
+        messages: {
+            add: 'Egzersiz eklendi',
+            delete: 'Egzersiz silindi'
+        }
     }
 }

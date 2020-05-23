@@ -9,21 +9,18 @@ module.exports = {
     logout: 'Logout',
     entry_successful: 'Entry successful',
     entry_failed: 'Entry failed',
+    close: 'Close',
+    save: 'Save',
 
     navbar: {
-        take_coaching: 'TAKE COACHİNG',
-        target: 'WHAT\'S YOUR TARGET?',
-        target_menu: {
-            body_building: 'BODY BUILDING',
-            burning_oil: 'BURNING OIL',
-            strengthened: 'STRENGTHENED'
-        },
         exercises: 'EXERCİSES',
         supplements: 'SUPPLEMENTS',
-        others: 'OTHERS',
-        others_menu: {
-            calculator: 'CALCULATOR',
-            quizzes: 'QUIZZES'
+        calculators: 'CALCULATORS',
+        calculators_menu: {
+            ideal_weight_calculation: 'IDEAL WEIGHT CALCULATION',
+            body_fat_ratio: 'BODY FAT RATIO',
+            daily_calorie_needs: 'DAILY CALORIE NEEDS',
+            body_mass_index: 'BODY MASS INDEX'
         }
     },
 
@@ -51,5 +48,15 @@ module.exports = {
         body_fat_ratio: 'Body Fat Ratio',
         daily_calorie_needs: 'Daily Calorie Needs',
         body_mass_index: 'Body Mass Index'
+    },
+
+    exercises: {
+        title: 'EXERCİSES',
+        add: 'ADD EXERCİSE',
+
+        messages: {
+            add: 'Added exercise',
+            delete: 'Deleted exercise'
+        }
     }
 }
