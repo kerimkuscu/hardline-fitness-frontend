@@ -65,8 +65,8 @@ toastr.options = {
   'hideMethod': 'fadeOut'
 };
 
-// eslint-disable-next-line vue/require-name-property
 new Vue({
+  name: 'Main',
   render: h => h(App),
   i18n,
   router
