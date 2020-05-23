@@ -4,9 +4,8 @@
       <h3 class="card-title d-inline">
         {{ $t('exercises.title') }}
       </h3>
-      <button v-if="token" class="btn btn-primary float-right" type="button" @click="addProgram">
-        {{ $t('exercises.add') }}
-      </button>
+
+      <program-modal v-if="token" :token="token" />
     </div>
     <div class="card-body">
       <div class="col-12">
@@ -26,17 +25,21 @@
                   {{ item.content }}
                 </span>
               </div>
+              <div class="card-footer footer-padding">
+                <span class="author-style">{{ $t('exercises.author') }}: {{ item.author.nickname }}</span>
+                <span class="author-style float-right" style="padding-top: 6px">{{ getHumanizedDatetime(fromUTC(item.created_at)) }}</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-      <program-modal />
   </div>
 </template>
 
 <script>
     import ProgramModal from './program-modal';
+    import dateTimeFormatter from '../mixins/dateTimeFormatter';
 
     export default {
         name: 'Exercises',
@@ -44,6 +47,10 @@
         components: {
             ProgramModal
         },
+
+        mixins: [
+          dateTimeFormatter
+        ],
 
         data: () => ({
             items: null,
@@ -63,10 +70,6 @@
 
             getToken(data) {
                 this.token = data;
-            },
-
-            addProgram() {
-                window.eventHub.$emit('open-program-modal');
             },
 
             deleteProgram(item) {
@@ -89,3 +92,15 @@
         }
     }
 </script>
+
+<style scoped>
+  .author-style {
+    font-size: 11px;
+    color: #6d6a6af2;
+  }
+
+  .footer-padding {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+  }
+</style>
