@@ -53,10 +53,13 @@ module.exports = {
     exercises: {
         title: 'EXERCİSES',
         add: 'ADD EXERCİSE',
+        author: 'Author',
 
         messages: {
             add: 'Added exercise',
             delete: 'Deleted exercise'
-        }
+        },
+
+        select: '(Select Author)',
     }
 }

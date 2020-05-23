@@ -53,10 +53,13 @@ module.exports = {
     exercises: {
         title: 'EGZERSİZLER',
         add: 'EGZERSİZ EKLE',
+        author: 'Yazar',
 
         messages: {
             add: 'Egzersiz eklendi',
             delete: 'Egzersiz silindi'
-        }
+        },
+
+        select: '(Yazar Seç)',
     }
 }
