@@ -60,6 +60,7 @@
         mounted() {
             this.getPrograms();
             window.eventHub.$on('logged-in-user', this.getToken);
+            window.eventHub.$on('update-programs', this.getPrograms);
         },
 
         methods: {
