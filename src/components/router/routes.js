@@ -1,6 +1,7 @@
 import Home from '../home/home';
 import Login from '../user/login';
 import Register from '../user/register';
+import Exercises from '../exercises/exercises';
 import NotFound from '../not-found';
 
 export default [
@@ -20,6 +21,12 @@ export default [
         path: '/register',
         name: 'register',
         component: Register,
+    },
+
+    {
+        path: '/exercises',
+        name: 'exercises',
+        component: Exercises
     },
 
     { path: '*', component: NotFound }
